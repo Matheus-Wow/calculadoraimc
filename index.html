@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora IMC</title>
+        <link rel = "stylesheet" href = "./css/styles.css">
+        <script src = "./js/scripts.js"></script>
+    </head>
+
+    <body>
+        <form>
+            <h1>Calculo IMC</h1>
+            <hr></hr>
+            <br>
+            <label for = "name">Nome:</label>
+            <input type = "text" id = "name">
+            <br><br>
+            <label>Sexo:</label>
+            <input type = "radio" id = "masculino" name = "genero" value = "M">
+            <label for = "masculino">Masculino</label>
+            <input type = "radio" id = "feminino" name = "genero" value = "F">
+            <label for = "feminino">Feminino</label>
+            <br><br>
+            <label for = "altura">Altura (metros):</label>
+            <input style = "margin-right: 63px;" type = "text" id = "altura">
+            <br><br>
+            <label style = "padding-left: 6px;" for = "peso">Peso (kg):</label>
+            <input style = "margin-right: 30px;" type = "text" id = "peso">
+            <br><br>
+            <button type = "button" id = "buttonCalculate" onClick = "calcularIMC()">Calcular</button>
+            <input type = "reset">
+            <br><br>
+            <b id = "informacaoIMC"></b>
+            <br><br>
+        </form>
+    </body>
+</html>
